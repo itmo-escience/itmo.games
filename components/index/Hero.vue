@@ -51,7 +51,7 @@
 
                 <div class="hero-spacer"></div>
 
-                <a class="hero-button" href="https://abit.ifmo.ru/program/11714/">подробнее на abit.itmo.ru</a>
+                <a class="hero-button" href="https://abit.itmo.ru/program/13309/">подробнее на abit.itmo.ru</a>
             </div>
         </div>
     </div>
