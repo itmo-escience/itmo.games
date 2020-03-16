@@ -2,10 +2,12 @@
     <div class="hero">
         <div class="container mx-auto px-4">
             <div class="hero-lead">
-                <h1>Магистерская программа</h1>
-                <h2><span>Технологии разработки</span> <br>
+                <!--<h1>Магистерская программа</h1>-->
+                <h2><span>Магистратура</span> <br>
+                <span>Технологии разработки</span> <br>
                     <span>компьютерных игр</span>
                 </h2>
+                <h3>09.04.03 ПРИКЛАДНАЯ ИНФОРМАТИКА</h3>
             </div>
         </div>
         <div class="hero-blocks-wrapper">
@@ -84,9 +86,16 @@
         font-family: 'MullerExtraBold', 'sans-serif';
         font-size: 40px;
         text-transform: uppercase;
-        line-height: 60px;
+        line-height: 56px;
 
         display: inline-block;
+    }
+
+    h3{
+        font-family: 'MullerRegular', 'sans-serif';
+        letter-spacing: 0.05em;
+        margin-top: 40px;
+        margin-left: 20px;
     }
 
     h2 span {
