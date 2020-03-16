@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+    <div class="wrapper" v-if="!overlay">
         <div class="container mx-auto px-4 flex">
             <article class="labs">
                 <h1>Работы студентов</h1>
@@ -52,8 +52,8 @@
                 </div>
             </article>
         </div>
-        <Overlay v-if="overlay" :name="game"/>
     </div>
+    <Overlay v-else :name="game" @back="closeGame"/>
 </template>
 
 <script>
@@ -78,6 +78,9 @@ import Overlay from '~/components/index/Overlay.vue'
         openGame(name){
             this.overlay = true;
             this.game = name;
+        },
+        closeGame(){
+            this.overlay = false;
         }
     }
   }

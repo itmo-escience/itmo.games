@@ -1,10 +1,10 @@
 <template>
-    <div class="container mx-auto px-4 flex">
-        
+    <div class="container mx-auto px-4 flex wrapper">
         <div class="teachers-slider">
-            <swiper :options="swiperOptions" ref="teachersSwiper">
+            <swiper :options="swiperOptions" ref="swiper">
                 <swiper-slide v-for="g in games" :key="g.name">
                     <div class="overview">
+                        <div class="exit" @click="back"></div>
                         <h1 class="name">{{g.name}}</h1>
                         <div class="flex">
                             <youtube :player-width="720" :player-height="406" :video-id="g.video" />
@@ -23,27 +23,12 @@
                 <div class="arrow arrow-right2"></div>
             </div>
         </div>
-        
-        <!--<div class="overview">
-            <h1 class="name">{{name}}</h1>
-            <div class="flex">
-                <youtube :player-width="720" :player-height="406" :video-id="game.video" />
-                <div class="desc">
-                    <div class="desc-head">Авторы</div>
-                    <div class="desc-body">{{ game.authors.join() }}</div>
-                    <div class="desc-head">Описание</div>
-                    <div class="desc-body">{{ game.description_ru }}</div>
-                </div>
-            </div>
-        </div>-->
 
     </div>
 </template>
 <script>
-    //import VueYouTubeEmbed from 'vue-youtube-embed';
     export default{
         props: ['name'],
-        //components: {VueYouTubeEmbed},
         data(){
             return{
                 swiperOptions: {
@@ -95,14 +80,6 @@
                         authors: ['Чеботков Даниил'],
                         addition: 'https://stockyspark.itch.io/race-trace?fbclid=IwAR1KIJ47iOvCJumwF-ZHPXkyiUSHyQwkeAbexcUhZ-f1KNvAzWp0avvXf3Y'
                     },
-                    'Equilibrium': {
-                        name: 'Equilibrium',
-                        description: "Арена-шутер в стилистике retrowave, в котором игроку предстоит защищать свой кристалл от врагов и уничтожать их кристаллы",
-                        description_ru: "Арена-шутер в стилистике retrowave, в котором игроку предстоит защищать свой кристалл от врагов и уничтожать их кристаллы",
-                        video: '',
-                        authors: [],
-                        addition: ''
-                    },
                     'The Gate': {
                         name: 'The Gate',
                         description: "After an accident your soul was broken and you was closed inside your head.Open all gates to leave this place.Use special abilities to pass the obstacles.New ability for every level.",
@@ -111,23 +88,47 @@
                         authors: ['Тимур Сайфуллин'],
                         addition: ''
                     },
+                    'Equilibrium': {
+                        name: 'Equilibrium',
+                        description: "Арена-шутер в стилистике retrowave, в котором игроку предстоит защищать свой кристалл от врагов и уничтожать их кристаллы",
+                        description_ru: "Арена-шутер в стилистике retrowave, в котором игроку предстоит защищать свой кристалл от врагов и уничтожать их кристаллы",
+                        video: '',
+                        authors: [],
+                        addition: ''
+                    },
+                    
                 }
             }
         },
+        methods:{
+            back(){
+                this.$emit('back');
+            }
+        },
         created(){
-            console.log(this.name)
             this.game = this.games[this.name];
         },
         mounted(){
-            //this.swiper.slideTo(3, 1000, false)
-            console.log(this.swiper)
+            this.$refs.swiper.swiper.slideTo( Object.keys(this.games).indexOf(this.name) + 1, 10, true)
         }
     }
 </script>
 <style scoped lang="scss">
+    .exit{
+        position: absolute;
+        top: 25px;
+        right: 25px;
+    }
+    .exit:after{
+        content: url('/exit.svg');
+    }
+
+    .wrapper{
+        margin-top: 200px;
+    }
     .desc{
         margin-left: 60px;
-        font-size: 16px;
+        font-size: 14px;
     }
     .desc-head{
         font-family: MullerBold, sans-serif;
@@ -137,7 +138,7 @@
     .desc-body{
         font-family: OpenSansRegular, sans-serif;
         margin-bottom: 35px;
-        line-height: 28px;
+        line-height: 22px;
     }
     h1{
         margin: 0px auto 50px auto;
