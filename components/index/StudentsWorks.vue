@@ -6,27 +6,45 @@
                 <div class="labs-slider">
                     <swiper class="swiper" :options="swiperOption">
                         <swiper-slide>
-                            <div class="lab">
-                                <img src="/labs/1.jpg"/>
+                            <div class="lab" @click="openGame('SUPERMASSIVE BLACK HOLE')">
+                                <img src="/labs/prew_main_page/SUPERMASSIVE-BLACK-HOLE.png"/>
                                 <div class="lab-title">SUPERMASSIVE BLACK HOLE</div>
                             </div>
                         </swiper-slide>
                         <swiper-slide>
-                            <div class="lab">
-                                <img src="/labs/2.jpg"/>
+                            <div class="lab" @click="openGame('Alchemica')">
+                                <img src="/labs/prew_main_page/Alchemica.gif"/>
                                 <div class="lab-title">Alchemica</div>
                             </div>
                         </swiper-slide>
                         <swiper-slide>
-                            <div class="lab">
-                                <img src="/labs/3.jpg"/>
+                            <div class="lab" @click="openGame('Greedy Gramps')">
+                                <img src="/labs/prew_main_page/Greedy-Gramps.png"/>
                                 <div class="lab-title">Greedy Gramps</div>
                             </div>
                         </swiper-slide>
                         <swiper-slide>
-                            <div class="lab">
-                                <img src="/labs/4.jpg"/>
+                            <div class="lab" @click="openGame('Smart Ass')">
+                                <img src="/labs/prew_main_page/Smart-Ass.png"/>
                                 <div class="lab-title">Smart Ass</div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="lab" @click="openGame('Race-Trace')">
+                                <img src="/labs/prew_main_page/Race-Trace.png"/>
+                                <div class="lab-title">Race Trace</div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="lab" @click="openGame('The Gate')">
+                                <img src="/labs/prew_main_page/The-Gate.png"/>
+                                <div class="lab-title">The Gate</div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="lab" @click="openGame('Equilibrium')">
+                                <img src="/labs/prew_main_page/Equilibrium.png"/>
+                                <div class="lab-title">Equilibrium</div>
                             </div>
                         </swiper-slide>
                         <div class="swiper-scrollbar" slot="scrollbar"></div>
@@ -34,13 +52,18 @@
                 </div>
             </article>
         </div>
+        <Overlay v-if="overlay" :name="game"/>
     </div>
 </template>
 
 <script>
+import Overlay from '~/components/index/Overlay.vue'
   export default {
+    components: { Overlay },
     data() {
       return {
+        overlay: false,
+        game: '',
         swiperOption: {
           slidesPerView: 3,
           spaceBetween: 30,
@@ -50,6 +73,12 @@
           }
         }
       }
+    },
+    methods:{
+        openGame(name){
+            this.overlay = true;
+            this.game = name;
+        }
     }
   }
 </script>

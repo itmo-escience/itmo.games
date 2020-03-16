@@ -43,6 +43,7 @@ export default {
     plugins: [
         '~plugins/dragscroll',
         '~plugins/swiper',
+        { src: '@/plugins/youtube.js', ssr: false },
         {src: '~plugins/analytics.js', ssr: false}
     ],
 

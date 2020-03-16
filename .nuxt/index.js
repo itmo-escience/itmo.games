@@ -14,6 +14,7 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 import nuxt_plugin_axios_31062e52 from 'nuxt_plugin_axios_31062e52' // Source: .\\axios.js (mode: 'all')
 import nuxt_plugin_dragscroll_28e06418 from 'nuxt_plugin_dragscroll_28e06418' // Source: ..\\plugins\\dragscroll (mode: 'all')
 import nuxt_plugin_swiper_3aa459e2 from 'nuxt_plugin_swiper_3aa459e2' // Source: ..\\plugins\\swiper (mode: 'all')
+import nuxt_plugin_youtube_71036ce8 from 'nuxt_plugin_youtube_71036ce8' // Source: ..\\plugins\\youtube.js (mode: 'client')
 import nuxt_plugin_analytics_60d673f0 from 'nuxt_plugin_analytics_60d673f0' // Source: ..\\plugins\\analytics.js (mode: 'client')
 
 // Component: <ClientOnly>
@@ -158,6 +159,10 @@ async function createApp (ssrContext) {
 
   if (typeof nuxt_plugin_swiper_3aa459e2 === 'function') {
     await nuxt_plugin_swiper_3aa459e2(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_youtube_71036ce8 === 'function') {
+    await nuxt_plugin_youtube_71036ce8(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_analytics_60d673f0 === 'function') {
