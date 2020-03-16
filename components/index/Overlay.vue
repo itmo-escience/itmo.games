@@ -1,8 +1,18 @@
 <template>
-    <!--<iframe width="420" height="315" :src="game.video"></iframe>-->
-    
-    <youtube :player-width="500" :player-height="500" :video-id="game.video" />
-
+    <div class="container mx-auto px-4 flex">
+        <div class="overview">
+            <h1 class="name">{{name}}</h1>
+            <div class="flex">
+                <youtube :player-width="720" :player-height="406" :video-id="game.video" />
+                <div class="desc">
+                    <div class="desc-head">Авторы</div>
+                    <div class="desc-body">{{ game.authors.join() }}</div>
+                    <div class="desc-head">Описание</div>
+                    <div class="desc-body">{{ game.description_ru }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 <script>
     //import VueYouTubeEmbed from 'vue-youtube-embed';
@@ -71,5 +81,31 @@
         }
     }
 </script>
-<style>
+<style scoped lang="scss">
+    .desc{
+        margin-left: 60px;
+        font-size: 16px;
+    }
+    .desc-head{
+        font-family: MullerBold, sans-serif;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    .desc-body{
+        font-family: OpenSansRegular, sans-serif;
+        margin-bottom: 35px;
+        line-height: 28px;
+    }
+    h1{
+        margin: 0px auto 50px auto;
+        text-align: center;
+        font-family: MullerBold, sans-serif;
+        font-size: 40px;
+    }
+    .overview{
+        margin: 20px auto 20px auto;
+        padding: 70px 60px;
+        background: rgba(14, 10, 32, 0.85);
+        backdrop-filter: blur(40px);
+    }
 </style>
