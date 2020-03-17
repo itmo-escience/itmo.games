@@ -9,8 +9,7 @@
                         <div class="flex">
                             <!-- <youtube :player-width="720" :player-height="406" :video-id="g.video"/> -->
                             <div class="screens">
-                                <img :src="full"/>
-                                <Scroller :game="g" @full="full = $event"/>
+                                <Scroller :game="g"/>
                             </div>
                             <div class="desc">
                                 <div class="desc-head">Авторы</div>
@@ -43,9 +42,9 @@ import Scroller from '~/components/index/Scroller.vue'
                         prevEl: '.arrow-left2',
                     },
                     loop: true,
+                    allowTouchMove: false
                 },
                 game: null,
-                full: null,
                 games: {
                     'SUPERMASSIVE BLACK HOLE': {
                         name: 'SUPERMASSIVE BLACK HOLE',
@@ -154,9 +153,6 @@ import Scroller from '~/components/index/Scroller.vue'
         mounted(){
             let swiper = this.$refs.swiper.swiper; 
             swiper.slideTo( Object.keys(this.games).indexOf(this.name) + 1, 10, true);
-            swiper.on('slideChange', ()=>{
-                console.log(swiper.activeIndex)
-            });
         }
     }
 </script>
@@ -174,7 +170,7 @@ import Scroller from '~/components/index/Scroller.vue'
         margin-top: 200px;
     }
     .screens{
-        width: 500px;
+        width: 700px;
     }
     .desc{
         margin-left: 60px;
