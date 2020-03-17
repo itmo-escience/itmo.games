@@ -97,6 +97,9 @@ import Overlay from '~/components/index/Overlay.vue'
             font-size: 40px;
         }
     }
+    .lab{
+        cursor: pointer;
+    }
     .lab:hover > .lab-title{
         color: #C82040;
     }
