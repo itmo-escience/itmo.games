@@ -32,7 +32,7 @@
                         </ul>
                     </div>
 
-                    <a class="plan-link" href="http://edu.ifmo.ru/file/subspec/3346/09.04.03_tehnologii_razrabotki_kompyuternyh_igr.pdf">подробный учебный план
+                    <a class="plan-link" target="_blank" href="http://edu.ifmo.ru/file/subspec/3346/09.04.03_tehnologii_razrabotki_kompyuternyh_igr.pdf">подробный учебный план
                         . . .</a>
                 </div>
 
@@ -63,7 +63,7 @@
                         </ul>
                     </div>
 
-                    <a class="plan-link" href="http://edu.ifmo.ru/file/subspec/3346/09.04.03_tehnologii_razrabotki_kompyuternyh_igr.pdf">подробный учебный план
+                    <a class="plan-link" target="_blank" href="http://edu.ifmo.ru/file/subspec/3346/09.04.03_tehnologii_razrabotki_kompyuternyh_igr.pdf">подробный учебный план
                         . . .</a>
                 </div>
             </div>
