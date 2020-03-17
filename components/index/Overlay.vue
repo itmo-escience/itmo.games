@@ -150,8 +150,8 @@ import Scroller from '~/components/index/Scroller.vue'
             this.game = this.games[this.name];
         },
         mounted(){
-            let swiper = this.$refs.swiper.swiper; 
-            swiper.slideTo( Object.keys(this.games).indexOf(this.name) + 1, 10, true);
+            let swiper = this.$refs.swiper.swiper;
+            swiper.slideTo( Object.keys(this.games).indexOf(this.name), 0, true);
         }
     }
 </script>
