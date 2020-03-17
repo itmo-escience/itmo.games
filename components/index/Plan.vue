@@ -12,7 +12,7 @@
             <div class="plan-details-wrapper">
                 <div class="plan-details" v-if="this.spec === 'gd'">
                     <div class="plan-details__info">
-                        <p>Специализация "Проектирование видеоигр" ориентируется на углубленное изучение геймдизайна
+                        <p>Специализация «Проектирование видеоигр» ориентируется на углубленное изучение геймдизайна
                             и различные методы генерации контента.</p>
                         <p>Данная специализация ориентирована на следующие профессии: Game designer, Producer, Project Manager, Level designer.</p>
                     </div>
@@ -38,9 +38,14 @@
 
                 <div class="plan-details" v-else>
                     <div class="plan-details__info">
-                        <p>Специализация <br> "Внутриигровые технологии" акцентируется на технологических темах игровой индустрии: низкоуровневому
+                        <p>Специализация <br> «Внутриигровые технологии» акцентируется на технологических темах игровой индустрии: низкоуровневому
                             программировании, разработке собственных игровых движков, программированию игрового ИИ.</p>
                         <p>Данная специализация ориентирована на следующие профессии: Gameplay programmer, Programmer, Technical Artist.</p>
+
+                        <div class="partner">
+                            <div>Корпоративный партнер</div>
+                            <img src="/logo_sperasoft.png"/>
+                        </div>
                     </div>
 
                     <div class="plan-details__modules">
@@ -147,23 +152,32 @@
     .plan-details {
         width: 810px;
         margin: 0 auto;
-        padding: 60px 0 40px 0;
+        padding: 60px 0 80px 0;
 
         display: flex;
         flex: 1;
         position: relative;
     }
 
+    .partner{
+        left: 0;
+        bottom: 40px;
+        position: absolute;
+        font-family: OpenSansRegular, sans-serif;
+        color: rgba(255, 255, 255, .5);
+        margin-top: 60px;
+        margin-bottom: 10px;
+    }
+
     .plan-details__info {
         width: 33.3333%;
         margin-right: 40px;
-        margin-bottom: 64px;
+        margin-bottom: 20px;
 
         p {
-            margin-bottom: 40px;
-            font-family: OpenSansRegular, sans-serif;
-
-            line-height: 28px;
+                margin-bottom: 15px;
+                font-family: OpenSansRegular, sans-serif;
+                line-height: 26px;
         }
     }
 
