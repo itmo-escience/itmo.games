@@ -6,10 +6,10 @@
         </div>
         <swiper class="swiper" :options="swiperOption">
             <swiper-slide v-if="game.video">
-                <img @click="openVideo" class="small" :src="videoUrl"/>
+                <img @click="openVideo" class="small" :src="videoUrl" :class="{focus: focus === 'video'}"/>
             </swiper-slide>
             <swiper-slide v-for="s in game.screens" :key="s">
-                <img :src="s" class="small" @click="fullScreen(s)"/>
+                <img :src="s" class="small" @click="fullScreen(s)" :class="{focus: focus === s}"/>
             </swiper-slide>
         </swiper>
     </div>
@@ -20,6 +20,7 @@ export default{
     data(){
         return {
             full: null,
+            focus: 'video',
             video: true,
             swiperOption: {
                 slidesPerView: 5,
@@ -28,10 +29,12 @@ export default{
     },
     methods: {
         fullScreen(url){
+            this.focus = url;
             this.video = false;
             this.full = url.slice(0, url.length - 4)+'full.png';
         },
         openVideo(){
+            this.focus = 'video';
             this.video = true;
         }
     },
@@ -63,5 +66,8 @@ export default{
         width: 113px !important;
         height: 70px !important;
         max-width: inherit;
+    }
+    .focus{
+        border: 3px solid #ED1846;
     }
 </style>
