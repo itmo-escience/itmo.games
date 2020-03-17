@@ -11,7 +11,7 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_axios_31062e52 from 'nuxt_plugin_axios_31062e52' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_axios_79cc7910 from 'nuxt_plugin_axios_79cc7910' // Source: .\\axios.js (mode: 'all')
 import nuxt_plugin_dragscroll_28e06418 from 'nuxt_plugin_dragscroll_28e06418' // Source: ..\\plugins\\dragscroll (mode: 'all')
 import nuxt_plugin_swiper_3aa459e2 from 'nuxt_plugin_swiper_3aa459e2' // Source: ..\\plugins\\swiper (mode: 'all')
 import nuxt_plugin_youtube_71036ce8 from 'nuxt_plugin_youtube_71036ce8' // Source: ..\\plugins\\youtube.js (mode: 'client')
@@ -149,8 +149,8 @@ async function createApp (ssrContext) {
 
   // Plugin execution
 
-  if (typeof nuxt_plugin_axios_31062e52 === 'function') {
-    await nuxt_plugin_axios_31062e52(app.context, inject)
+  if (typeof nuxt_plugin_axios_79cc7910 === 'function') {
+    await nuxt_plugin_axios_79cc7910(app.context, inject)
   }
 
   if (typeof nuxt_plugin_dragscroll_28e06418 === 'function') {

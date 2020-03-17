@@ -7,7 +7,11 @@
                         <div class="exit" @click="back"></div>
                         <h1 class="name">{{g.name}}</h1>
                         <div class="flex">
-                            <youtube :player-width="720" :player-height="406" :video-id="g.video" />
+                            <!-- <youtube :player-width="720" :player-height="406" :video-id="g.video"/> -->
+                            <div class="screens">
+                                <img :src="full"/>
+                                <Scroller :game="g" @full="full = $event"/>
+                            </div>
                             <div class="desc">
                                 <div class="desc-head">Авторы</div>
                                 <div class="desc-body">{{ g.authors.join() }}</div>
@@ -27,8 +31,10 @@
     </div>
 </template>
 <script>
+import Scroller from '~/components/index/Scroller.vue'
     export default{
         props: ['name'],
+        components: { Scroller },
         data(){
             return{
                 swiperOptions: {
@@ -39,6 +45,7 @@
                     loop: true,
                 },
                 game: null,
+                full: null,
                 games: {
                     'SUPERMASSIVE BLACK HOLE': {
                         name: 'SUPERMASSIVE BLACK HOLE',
@@ -46,7 +53,12 @@
                         description_ru: 'Содержать бар на собственном астероиде — это далеко не сказка. То залетают кучи космического мусора, то орды злобных роботов пытаются украсть ваш честный заработок.',
                         video: 'vkd-wUrAHck',
                         authors: ['Симонов Андрей', 'Александр Гутриц'],
-                        addition: ''
+                        addition: '',
+                        screens: [
+                            '/labs/games_page/MassiveBlackHole/1.png',
+                            '/labs/games_page/MassiveBlackHole/2.png',
+                            '/labs/games_page/MassiveBlackHole/3.png',
+                        ]
                     },
                     'Alchemica': {
                         name: 'Alchemica',
@@ -54,7 +66,12 @@
                         description_ru: 'Адвенчура про варку зелий и полёты на фентезийном вингсьюте',
                         video: 'eddgu9prVO0',
                         authors: [],
-                        addition: 'https://twitter.com/Alchemica_Game'
+                        addition: 'https://twitter.com/Alchemica_Game',
+                        screens: [
+                            '/labs/games_page/Alchemica/1.png',
+                            '/labs/games_page/Alchemica/2.png',
+                            '/labs/games_page/Alchemica/3.png',
+                        ]
                     },
                     'Greedy Gramps': {
                         name: 'Greedy Gramps',
@@ -62,7 +79,11 @@
                         description_ru: 'Greedy Gramps -соревновательная ролевая игра. Игра сочетает в себе механики строительства ловушек в доме Грэмпа и исследования подземелий. Каждый из игроков ставит ловушки, чтобы защитить свой дом от других игроков, а затем атакует вражеский дом, чтобы найти наследство и заработать очки.',
                         video: 'V0gtwicfIrA',
                         authors: [],
-                        addition: ''
+                        addition: '',
+                        screens: [
+                            '/labs/games_page/GreedyGramps/1.png',
+                            '/labs/games_page/GreedyGramps/2.png'
+                        ]
                     },
                     'Smart Ass': {
                         name: 'Smart Ass',
@@ -70,7 +91,11 @@
                         description_ru: "Вы играете за маленького и храброго робота-пылесоса, который хочет убрать дом до прихода его хозяев. Но это не нравится домашним животным и они постоянно пытаются вам помешать. Отвлеките животных с помощью устройств, подключенных через Интернет вещей, не дайте им поймать вас!",
                         video: 'S7JNxA1PgKk',
                         authors: ['Чеботков Даниил'],
-                        addition: 'https://stockyspark.itch.io/smart-ass?fbclid=IwAR1_fRcPcK1rNWP65usHzywaaSC_0KQ3Xi0O6HTDVTtvoP-0wbCmWxeYKOE'
+                        addition: 'https://stockyspark.itch.io/smart-ass?fbclid=IwAR1_fRcPcK1rNWP65usHzywaaSC_0KQ3Xi0O6HTDVTtvoP-0wbCmWxeYKOE',
+                        screens: [
+                            '/labs/games_page/SmartAss/1.png',
+                            '/labs/games_page/SmartAss/2.png'
+                        ]
                     },
                     'Race-Trace': {
                         name: 'Race-Trace',
@@ -78,7 +103,12 @@
                         description_ru: "Race-Trace — это гонки на офисных стульях, где вы играете за одного из сотрудников. В пятницу вечером все мечтают наконец-то добраться до бара и выпить пару бутылок пива. Поторопись, первый получает шесть бутылок бесплатно!",
                         video: 'LL67854Y1yY',
                         authors: ['Чеботков Даниил'],
-                        addition: 'https://stockyspark.itch.io/race-trace?fbclid=IwAR1KIJ47iOvCJumwF-ZHPXkyiUSHyQwkeAbexcUhZ-f1KNvAzWp0avvXf3Y'
+                        addition: 'https://stockyspark.itch.io/race-trace?fbclid=IwAR1KIJ47iOvCJumwF-ZHPXkyiUSHyQwkeAbexcUhZ-f1KNvAzWp0avvXf3Y',
+                        screens: [
+                            '/labs/games_page/Race_trace/1.png',
+                            '/labs/games_page/Race_trace/2.png',
+                            '/labs/games_page/Race_trace/3.png',
+                        ]
                     },
                     'The Gate': {
                         name: 'The Gate',
@@ -86,7 +116,17 @@
                         description_ru: "После несчастного случая ваша душа разбита, и вы оказались заперты в своей голове. Откройте все ворота, чтобы выбраться.Используйте свои особые способности, чтобы преодолевать препятствия. Новые способности для каждого уровня.",
                         video: '6_fbjVN307E',
                         authors: ['Тимур Сайфуллин'],
-                        addition: ''
+                        addition: '',
+                        screens: [
+                            '/labs/games_page/TheGate/1.png',
+                            '/labs/games_page/TheGate/2.png',
+                            '/labs/games_page/TheGate/3.png',
+                            '/labs/games_page/TheGate/4.png',
+                            '/labs/games_page/TheGate/5.png',
+                            '/labs/games_page/TheGate/6.png',
+                            '/labs/games_page/TheGate/7.png',
+                            '/labs/games_page/TheGate/8.png',
+                        ]
                     },
                     'Equilibrium': {
                         name: 'Equilibrium',
@@ -94,7 +134,10 @@
                         description_ru: "Арена-шутер в стилистике retrowave, в котором игроку предстоит защищать свой кристалл от врагов и уничтожать их кристаллы",
                         video: '',
                         authors: [],
-                        addition: ''
+                        addition: '',
+                        screens: [
+                            '/labs/games_page/Equilibrium/1.png'
+                        ]
                     },
                     
                 }
@@ -109,7 +152,11 @@
             this.game = this.games[this.name];
         },
         mounted(){
-            this.$refs.swiper.swiper.slideTo( Object.keys(this.games).indexOf(this.name) + 1, 10, true)
+            let swiper = this.$refs.swiper.swiper; 
+            swiper.slideTo( Object.keys(this.games).indexOf(this.name) + 1, 10, true);
+            swiper.on('slideChange', ()=>{
+                console.log(swiper.activeIndex)
+            });
         }
     }
 </script>
@@ -125,6 +172,9 @@
 
     .wrapper{
         margin-top: 200px;
+    }
+    .screens{
+        width: 500px;
     }
     .desc{
         margin-left: 60px;
