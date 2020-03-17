@@ -41,7 +41,6 @@ import Scroller from '~/components/index/Scroller.vue'
                         nextEl: '.arrow-right2',
                         prevEl: '.arrow-left2',
                     },
-                    loop: true,
                     allowTouchMove: false
                 },
                 game: null,
@@ -170,7 +169,7 @@ import Scroller from '~/components/index/Scroller.vue'
         margin-top: 200px;
     }
     .screens{
-        width: 700px;
+        width: 720px;
     }
     .desc{
         margin-left: 60px;
