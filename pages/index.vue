@@ -1,7 +1,7 @@
 <template>
     <main>
         <div class="game">
-            <div><a href="https://abit.ifmo.ru/program/11714/">Подать заявку <img src="/icons/game.png" alt=""></a></div>
+            <div><a href="https://abit.itmo.ru/ums/system/login/" target="_blank">Подать заявку <img src="/icons/game.png" alt=""></a></div>
         </div>
         <Hero></Hero>
         <Plan></Plan>
