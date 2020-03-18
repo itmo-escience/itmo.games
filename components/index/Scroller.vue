@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="view">
-            <youtube v-if="video && game.video" :player-width="720" :player-height="406" :video-id="game.video"/>
+            <youtube v-if="video && game.video" :player-width="width" :player-height="height" :video-id="game.video"/>
             <img v-else class="full" :src="full"/>
         </div>
         <swiper class="swiper" :options="swiperOption">
@@ -21,6 +21,8 @@ export default{
         return {
             full: null,
             focus: 'video',
+            width: null,
+            height: null,
             video: true,
             swiperOption: {
                 slidesPerView: 5,
@@ -48,6 +50,10 @@ export default{
         if(!this.game.video){
             this.fullScreen(this.game.screens[0])
         };
+
+        this.swiperOption.slidesPerView = window.innerWidth > 512 ? 5 : 2;
+        this.width = window.innerWidth > 512 ? 720 : 280;
+        this.height = window.innerWidth > 512 ? 406 : 172;
     }
 }
 </script>
@@ -69,5 +75,19 @@ export default{
     }
     .focus{
         border: 3px solid #ED1846;
+    }
+    @media (max-width: 512px) {
+        .view{
+            width: 280px !important;
+            height: 172px !important;
+        }
+        img.full{
+            width: 280px !important;
+            height: 172px !important;
+        }
+        img.small{
+            width: 88px !important;
+            height: 54px !important;
+        }
     }
 </style>

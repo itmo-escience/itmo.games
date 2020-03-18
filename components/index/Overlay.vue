@@ -7,8 +7,7 @@
                         <div class="overview">
                             <div class="exit" @click="back"></div>
                             <h1 class="name">{{g.name}}</h1>
-                            <div class="flex">
-                                <!-- <youtube :player-width="720" :player-height="406" :video-id="g.video"/> -->
+                            <div class="flex about">
                                 <div class="screens">
                                     <Scroller :game="g"/>
                                 </div>
@@ -248,7 +247,6 @@ export default{
     }
     .overview{
         width: 1000px;
-        //margin: 20px auto 20px auto;
         padding: 70px 100px;
         background: rgba(14, 10, 32, 0.40);
         backdrop-filter: blur(40px);
@@ -261,7 +259,6 @@ export default{
     .arrow {
         position: absolute;
         top: 0;
-        //background-image: url("/arrow.png");
         width: 149px;
         height: 100%;
 
@@ -303,16 +300,48 @@ export default{
         }
     }
     @media (max-width: 512px) {
+        .overlay{
+            height: 100%;
+        }
+        .about{
+            display: block !important;
+        }
+        .overview{
+            width: 300px;
+            padding: 25px 25px;
+            max-height: 470px;
+            overflow: auto;
+        }
+        .screens{
+            width: 300px;
+        }
+        .desc{
+            margin-top: 30px;
+        }
+        .arrow{
+            top: auto;
+            bottom: -35px;
+            width: 57px;
+            height: 69px;
+            z-index: 1000;
+        }
+        .arrow-left2{
+            left: 48px;
+        }
+        .arrow-right2 {
+            right: 160px;
+        }
+        
+
         .teachers {
             margin-top: 80px;
             padding: 0;
         }
 
-
         .games-slider {
             position: relative;
             width: 100%;
-            margin: 72px 0 72px 0;
+            margin: -90px 0 72px 0;
         }
 
         .arrow-wrapper {
