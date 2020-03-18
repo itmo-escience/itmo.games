@@ -188,6 +188,7 @@ export default{
         position: absolute;
         top: 25px;
         right: 25px;
+        cursor: pointer;
     }
     .exit:after{
         content: url('/exit.svg');
