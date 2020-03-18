@@ -6,15 +6,15 @@
             <div class="hero-lead">
                 <!--<h1>Магистерская программа</h1>-->
                 <h2><span>Магистратура</span> <br>
-                <span>Технологии разработки</span> <br>
-                    <span>компьютерных игр</span>
+                <span>«Технологии разработки</span> <br>
+                    <span>компьютерных игр»</span>
                 </h2>
                 <h3>09.04.03 ПРИКЛАДНАЯ ИНФОРМАТИКА</h3>
             </div>
         </div>
         <div class="desc">
             <div>Создание Selfloss</div>
-            <a href="https://vk.com/alexgoodwinart">https://vk.com/alexgoodwinart</a>
+            <a href="https://vk.com/alexgoodwinart" target="_blank">https://vk.com/alexgoodwinart</a>
         </div>
         <div class="hero-blocks-wrapper">
             <div class="container mx-auto px-4">
@@ -28,7 +28,7 @@
                     <div class="hero-block">
                         <div>
                             <img src="icons/2.svg">
-                            <p>Преподаватели<br>-практики</p>
+                            <p>Преподаватели-<br>практики</p>
                         </div>
                     </div>
                     <div class="hero-block">
@@ -125,6 +125,7 @@
         font-size: 40px;
         text-transform: uppercase;
         line-height: 56px;
+        letter-spacing: 0.02em;
 
         display: inline-block;
     }
@@ -132,13 +133,13 @@
     h3{
         font-family: 'MullerRegular', 'sans-serif';
         letter-spacing: 0.05em;
-        margin-top: 40px;
+        margin-top: 25px;
         margin-left: 20px;
     }
 
     h2 span {
         background-color: #EC0B43;
-        padding: 16px;
+        padding: 18px 18px 10px 18px;
     }
 
     .hero-blocks-wrapper {
@@ -183,7 +184,7 @@
 
     .hero-text p {
         margin-bottom: 15px;
-        line-height: 30px;
+        line-height: 26px;
     }
 
     .hero-spacer {
