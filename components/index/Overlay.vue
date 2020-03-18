@@ -19,7 +19,7 @@
                                     <div class="desc-body">{{ g.authors.join() }}</div>
                                     <div class="desc-head">Описание</div>
                                     <div class="desc-body">{{ g.description_ru }}</div>
-                                    <a v-if="g.addition" class="addition" :href="g.addition">Подробнее об игре</a>
+                                    <a v-if="g.addition" class="addition" :href="g.addition" target="_blank">Подробнее об игре</a>
                                 </div>
                             </div>
                         </div>
@@ -212,10 +212,9 @@ export default{
         font-family: OpenSansRegular, sans-serif;
         margin-bottom: 35px;
         line-height: 22px;
-
-        .course{
-            font-family: OpenSansBold, sans-serif;
-        }
+    }
+    a{
+        color: #C82040;
     }
     h1{
         margin: 0px auto 50px auto;
