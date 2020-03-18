@@ -12,6 +12,10 @@
                 <h3>09.04.03 ПРИКЛАДНАЯ ИНФОРМАТИКА</h3>
             </div>
         </div>
+        <div class="desc">
+            <div>Создание Selfloss</div>
+            <a href="https://vk.com/alexgoodwinart">https://vk.com/alexgoodwinart</a>
+        </div>
         <div class="hero-blocks-wrapper">
             <div class="container mx-auto px-4">
                 <div class="hero-blocks">
@@ -73,6 +77,25 @@
     }
     img.bg{
         z-index: -1;
+    }
+    .desc{
+        position:absolute;
+        left: 124px;
+        bottom: 227px;
+
+        font-size: 20px;
+
+        div {
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
     }
 
     .hero {
