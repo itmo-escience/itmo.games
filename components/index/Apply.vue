@@ -332,10 +332,15 @@
             font-size: 14px;
         }
     }
-
+    
+    p {
+        line-height: 24px;
+    }
+    
     .apply-details {
         padding-left: 0 !important;
         margin-top: 40px;
+        line-height: 24px;
 
         span {
             font-family: 'MullerMedium', 'sans-serif';
