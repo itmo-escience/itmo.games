@@ -1,5 +1,7 @@
 <template>
     <div class="hero">
+        <video autoplay muted loop class="bg" src="/bg.mp4"></video>
+        <img src="/bg_gradient.png" class="bg"/>
         <div class="container mx-auto px-4">
             <div class="hero-lead">
                 <!--<h1>Магистерская программа</h1>-->
@@ -53,15 +55,28 @@
 
                 <div class="hero-spacer"></div>
 
-                <a class="hero-button" href="https://abit.itmo.ru/program/13309/">подробнее на abit.itmo.ru</a>
+                <a class="hero-button" href="https://abit.itmo.ru/program/13309/" target="_blank">подробнее на abit.itmo.ru</a>
             </div>
         </div>
     </div>
 </template>
-
 <style scoped lang="scss">
+    .bg{
+        position: absolute;
+        right: 0;
+        top: 0;
+        min-width: 100%; 
+        min-height: 100%;
+    }
+    video.bg{
+        z-index: -2;
+    }
+    img.bg{
+        z-index: -1;
+    }
+
     .hero {
-        background-image: url("/index-bg.png");
+        //background-image: url("/index-bg.png");
         background-repeat: no-repeat;
         background-position: top center;
         background-size: contain;
