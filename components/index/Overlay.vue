@@ -179,6 +179,19 @@ export default{
 }
 </script>
 <style scoped lang="scss">
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #ACACAC; 
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #666;
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+    }
     .overlay{
         position: fixed;
         top: 0px; left: 0px;
