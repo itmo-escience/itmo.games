@@ -4,6 +4,7 @@
             <div class="container mx-auto px-4 flex">
                 <article class="labs">
                     <h1>Работы студентов</h1>
+                    <div class="msg">В каждом семестре студенты создают свою игру самостоятельно или в команде. Посмотрите примеры работ от наших студентов:</div>
                     <div class="labs-slider">
                     <swiper class="swiper" :options="swiperOption">
                         <swiper-slide  v-for="g in games" :key="g.name">
@@ -91,6 +92,14 @@ import Overlay from '~/components/index/Overlay.vue'
             font-family: MullerBold, sans-serif;
             font-size: 40px;
         }
+    }
+    .msg{
+        text-align: center;
+        margin: 50px 200px 0px 200px;
+
+        font-family: OpenSansRegular, sans-serif;
+        font-size: 20px;
+        line-height: 30px;
     }
     .lab{
         cursor: pointer;
