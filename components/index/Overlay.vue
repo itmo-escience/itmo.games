@@ -219,11 +219,13 @@ export default{
         width: 720px;
     }
     .desc{
-        margin-left: 60px;
+        margin-left: 40px;
         font-size: 14px;
         max-height: 506px;
         overflow-y: auto;
-        margin-right: 10px;
+    }
+    .desc > div{
+        margin-right: 15px;
     }
     .desc-head{
         font-family: MullerBold, sans-serif;
