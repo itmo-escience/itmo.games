@@ -1,7 +1,7 @@
 <template>
     <div class="overlay">
         <div class="container mx-auto px-4 flex wrapper">
-            <div class="teachers-slider">
+            <div class="games-slider">
                 <swiper :options="swiperOptions" ref="swiper">
                     <swiper-slide v-for="g in games" :key="g.name">
                         <div class="overview">
@@ -26,8 +26,12 @@
                     </swiper-slide>
                 </swiper>
                 <div class="arrow-wrapper">
-                    <div class="arrow arrow-left2"></div>
-                    <div class="arrow arrow-right2"></div>
+                    <div class="arrow arrow-left2">
+                        <div class="arrow-left2-img arrow-img"></div>
+                    </div>
+                    <div class="arrow arrow-right2">
+                        <div class="arrow-right2-img arrow-img"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -45,6 +49,7 @@ export default{
                     nextEl: '.arrow-right2',
                     prevEl: '.arrow-left2',
                 },
+                //spaceBetween: 580,
                 allowTouchMove: false
             },
             game: null,
@@ -203,6 +208,9 @@ export default{
     .desc{
         margin-left: 60px;
         font-size: 14px;
+        max-height: 506px;
+        overflow-y: auto;
+        margin-right: 10px;
     }
     .desc-head{
         font-family: MullerBold, sans-serif;
@@ -226,27 +234,42 @@ export default{
     .overview{
         width: 1000px;
         //margin: 20px auto 20px auto;
-        padding: 70px 60px;
-        background: rgba(14, 10, 32, 0.85);
+        padding: 70px 100px;
+        background: rgba(14, 10, 32, 0.40);
         backdrop-filter: blur(40px);
     }
 
-    .teachers-slider{
+    .games-slider{
         position: relative;
         width: 1200px;
     }
     .arrow {
         position: absolute;
-        top: 40%;
-        background-image: url("/arrow.png");
-        width: 57px;
-        height: 69px;
+        top: 0;
+        //background-image: url("/arrow.png");
+        width: 149px;
+        height: 100%;
 
         cursor: pointer;
         outline: none;
+
+        &:hover{
+            background: rgba(172, 172, 172, 0.02);
+        }
+    }
+    .arrow-img{
+        width: 57px;
+        height: 69px;
+        background-image: url("/arrow.png");
+        position: absolute;
+        top: 45%;
+        left: 30%;
+
     }
     .arrow-left2 {
-        left: -140px;
+        left: -150px;
+    }
+    .arrow-left2-img{
         transform: rotate(180deg);
 
         &:hover {
@@ -255,7 +278,9 @@ export default{
         }
     }
     .arrow-right2 {
-        right: -70px;
+        right: -150px;
+    }
+    .arrow-right2-img{
 
         &:hover {
             background-image: url("/arrow-hover.png");
@@ -269,7 +294,7 @@ export default{
         }
 
 
-        .teachers-slider {
+        .games-slider {
             position: relative;
             width: 100%;
             margin: 72px 0 72px 0;
