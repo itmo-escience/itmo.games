@@ -165,9 +165,9 @@
 <style scoped lang="scss">
     .wrapper {
         position: relative;
-        background-image: url("/map.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-image: url("/contacts_gradient.png"), url("/map.jpg");
+        background-size: cover, cover;
+        background-repeat: no-repeat, no-repeat;
     }
     .contact{
         margin-bottom: 5px;
