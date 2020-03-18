@@ -85,7 +85,7 @@ import Overlay from '~/components/index/Overlay.vue'
 <style scoped lang="scss">
     .labs {
         width: 100%;
-        margin-top: 200px;
+        margin-top: 130px;
 
         h1 {
             text-align: center;
@@ -95,7 +95,7 @@ import Overlay from '~/components/index/Overlay.vue'
     }
     .msg{
         text-align: center;
-        margin: 50px 200px 0px 200px;
+        margin: 50px 100px 0px 100px;
 
         font-family: OpenSansRegular, sans-serif;
         font-size: 20px;
@@ -110,7 +110,7 @@ import Overlay from '~/components/index/Overlay.vue'
     .labs-slider {
         position: relative;
         width: 100%;
-        margin: 90px auto 160px auto;
+        margin: 50px auto 0px auto;
     }
     .lab-title{
         margin: 20px 0px 40px 0px;
