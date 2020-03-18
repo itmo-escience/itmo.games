@@ -33,7 +33,7 @@ import Overlay from '~/components/index/Overlay.vue'
         game: '',
         swiperOption: {
           slidesPerView: 4,
-          spaceBetween: 90,
+          spaceBetween: 30,
           scrollbar: {
             el: '.swiper-scrollbar',
             hide: false

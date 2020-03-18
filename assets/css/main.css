@@ -11,3 +11,6 @@
     -webkit-transform: rotate(180deg) !important;
     transform: rotate(180deg) !important;
 }
+.labs-slider > div> div>.swiper-slide {
+    width: auto !important;
+}
