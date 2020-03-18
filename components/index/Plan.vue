@@ -161,12 +161,16 @@
 
     .partner{
         left: 0;
-        bottom: 40px;
+        bottom: 35px;
         position: absolute;
         font-family: OpenSansRegular, sans-serif;
         color: rgba(255, 255, 255, .5);
         margin-top: 60px;
         margin-bottom: 10px;
+
+        div{
+            margin-bottom: 15px;
+        }
     }
 
     .plan-details__info {
@@ -177,6 +181,7 @@
         p {
                 margin-bottom: 15px;
                 font-family: OpenSansRegular, sans-serif;
+                font-size: 14px;
                 line-height: 26px;
         }
     }
