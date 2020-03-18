@@ -3,58 +3,72 @@
         <div class="container mx-auto px-4 flex">
             <article class="partners">
                 <no-ssr>
-                    <div class="teachers-slider">
+                    <div class="partners-slider">
                         <swiper :options="swiperOptions" ref="teachersSwiper">
+
                             <swiper-slide>
-                                <div class="partners-blocks">
-                                    <div class="block">
-                                        <img src="partners/unigine_logo_black.png">
-                                    </div>
-                                    <div class="block">
-                                        <img src="partners/AcademicParnter.png">
-                                    </div>
-                                    <div class="block">
-                                        <img src="partners/wargaming.png">
-                                    </div>
+                                <div class="block">
+                                    <img src="partners/unigine_logo_black.png">
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
-                                <div class="partners-blocks">
-                                    <div class="block">
-                                        <img src="partners/nival.png">
-                                    </div>
-                                    <div class="block">
-                                        <img src="partners/bytex.png">
-                                    </div>
-                                    <div class="block">
-                                        <img src="partners/trace.png">
-                                    </div>
+                                <div class="block">
+                                    <img src="partners/AcademicParnter.png">
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
-                                <div class="partners-blocks">
-                                    <div class="block">
-                                        <img src="partners/banana.png">
-                                    </div>
-                                    <div class="block">
-                                        <img src="partners/indikator_full.png">
-                                    </div>
-                                    <div class="block">
-                                        <img src="partners/tau_tracker.png">
-                                    </div>
+                                <div class="block">
+                                    <img src="partners/wargaming.png">
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
-                                <div class="partners-blocks">
-                                    <div class="block">
-                                        <img src="partners/cerevrum.png">
-                                    </div>
-                                    <div class="block">
-                                        <img src="partners/antilatency.png">
-                                    </div>
-                                    <div class="block">
-                                        <img src="partners/modum_lab.png">
-                                    </div>
+                                <div class="block">
+                                    <img src="partners/nival.png">
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="block">
+                                    <img src="partners/bytex.png">
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="block">
+                                    <img src="partners/trace.png">
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="block">
+                                    <img src="partners/banana.png">
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="block">
+                                    <img src="partners/indikator_full.png">
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="block">
+                                    <img src="partners/tau_tracker.png">
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="block">
+                                    <img src="partners/cerevrum.png">
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="block">
+                                    <img src="partners/antilatency.png">
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="block">
+                                    <img src="partners/modum_lab.png">
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="block">
+                                    <img src="partners/logo_sperasoft.png">
                                 </div>
                             </swiper-slide>
                         </swiper>
@@ -74,6 +88,7 @@
                         nextEl: '.arrow-right',
                         prevEl: '.arrow-left',
                     },
+                    slidesPerView: 3,
                     loop: true,
                     autoplay: {
                         delay: 3500,
@@ -97,7 +112,7 @@
         }
     }
 
-    .teachers-slider {
+    .partners-slider {
         position: relative;
         margin: 0 auto;
     }
@@ -121,11 +136,11 @@
 
         padding: 0 50px;
 
-        border-left: 1px solid #5c5a66;
+        // border-left: 1px solid #5c5a66;
 
-        &:first-child {
-            border-left: none;
-        }
+        // &:first-child {
+        //     border-left: none;
+        // }
     }
 
     .arrow {
