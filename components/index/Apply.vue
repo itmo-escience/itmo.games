@@ -197,7 +197,7 @@
 <style scoped lang="scss">
     .wrapper {
         position: relative;
-        background-image: url("/apply-bg.jpg");
+        background-image: url("/apply-bg.png");
         background-size: 100%;
         background-repeat: no-repeat;
         //  background-position-y: -90px;
