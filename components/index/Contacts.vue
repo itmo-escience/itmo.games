@@ -13,7 +13,7 @@
                         <p>Санкт-Петербург, Биржевая линия, д. 14</p>
                     </div>
                     <div class="info-simple">
-                        <p><em>Контактное лицо:</em></p>
+                        <p class="contact"><em>Контактное лицо:</em></p>
                         <p>Хорошавин Александр Александрович</p>
                     </div>
                     <div class="info-line"><img src="/icons/phone.png" alt="">
@@ -169,7 +169,9 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
-
+    .contact{
+        margin-bottom: 5px;
+    }
     .contacts {
         display: flex;
         padding-top: 150px;
