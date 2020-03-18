@@ -4,7 +4,7 @@
             <div class="container mx-auto px-4 flex">
                 <article class="labs">
                     <h1>Работы студентов</h1>
-                    <div class="msg">В каждом семестре студенты создают свою игру самостоятельно или в команде. Посмотрите примеры работ от наших студентов:</div>
+                    <div class="msg">В каждом семестре студенты создают свою игру самостоятельно или в команде. Посмотрите примеры работ от наших студентов</div>
                     <div class="labs-slider">
                     <swiper class="swiper" :options="swiperOption">
                         <swiper-slide  v-for="g in games" :key="g.name">
@@ -36,7 +36,8 @@ import Overlay from '~/components/index/Overlay.vue'
           spaceBetween: 30,
           scrollbar: {
             el: '.swiper-scrollbar',
-            hide: false
+            hide: false,
+            draggable: true
           }
         },
         games:[
