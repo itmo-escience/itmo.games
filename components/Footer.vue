@@ -14,6 +14,8 @@
         height: 70px;
     }
     a {
+        margin: 0 auto;
+        opacity: 0.5;
     }
     .itmo-logo {
         width: 300px;
