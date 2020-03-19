@@ -5,9 +5,10 @@
         </div>
         <Hero></Hero>
         <Plan></Plan>
-        <StudentsWorks/>
+        <StudentsWorks />
         <Apply></Apply>
         <Teachers></Teachers>
+        <Graduates />
         <no-ssr>
             <PartnersMobile v-if="isMobile()"></PartnersMobile>
             <PartnersScroll v-else></PartnersScroll>
@@ -22,6 +23,7 @@
     import StudentsWorks from '~/components/index/StudentsWorks.vue'
     import Apply from '~/components/index/Apply.vue'
     import Teachers from '~/components/index/Teachers.vue'
+    import Graduates from '~/components/index/Graduates.vue'
     import PartnersScroll from '~/components/index/PartnersScroll.vue'
     import PartnersMobile from '~/components/index/PartnersMobile.vue'
     import Contacts from '~/components/index/Contacts.vue'
@@ -31,6 +33,7 @@
             Hero, Plan,
             StudentsWorks,
             Apply, Teachers,
+            Graduates,
             PartnersScroll, PartnersMobile,
             Contacts},
         data() {
