@@ -6,11 +6,11 @@
                     <div class="partners-slider">
                         <swiper :options="swiperOptions" ref="teachersSwiper">
 
-                            <swiper-slide>
+                            <!--<swiper-slide>
                                 <div class="block">
                                     <img src="partners/unigine_logo_black.png">
                                 </div>
-                            </swiper-slide>
+                            </swiper-slide>-->
                             <swiper-slide>
                                 <div class="block">
                                     <img src="partners/AcademicParnter.png">
@@ -91,7 +91,7 @@
                     slidesPerView: 3,
                     loop: true,
                     autoplay: {
-                        delay: 3500,
+                        delay: 2000,
                         disableOnInteraction: false
                     },
                 }
