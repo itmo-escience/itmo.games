@@ -134,7 +134,7 @@
     .teachers-slider {
         position: relative;
         width: 670px;
-        margin: 90px auto 160px auto;
+        margin: 90px auto 0 auto;
     }
 
     .tr {
@@ -216,7 +216,7 @@
     .name {
         display: inline-block;
 
-        padding: 12px;
+        padding: 10px 10px 8px 10px;
         margin-bottom: 20px;
         background-color: white;
         color: #171328;
