@@ -194,7 +194,7 @@ export default{
     .overlay{
         position: fixed;
         top: 0px; left: 0px;
-        width: 100%; height: 100vh;
+        width: 100%; height: 100%;
         z-index: 10000;
 
         background-color: rgba(48,54,60,.8);
@@ -299,6 +299,27 @@ export default{
             transform: rotate(180deg);
         }
     }
+    @media (max-width: 1024px){
+        .wrapper{
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+        .games-slider{
+            width: 800px;
+        }
+        .overview{
+            padding: 60px 45px 60px 25px;
+            width: 700px;
+            height: 80vh;
+        }
+        .about{
+            display: block !important;
+        }
+        .desc{
+            margin-left: 0;
+            width: 72%;
+        }
+    }
     @media (max-width: 512px) {
         .overlay{
             height: 100%;
@@ -308,20 +329,35 @@ export default{
         }
         .overview{
             width: 300px;
-            padding: 25px 25px;
-            max-height: 470px;
+            padding: 40px 25px 20px 25px;
+            max-height: 85vh;
             overflow: auto;
         }
+        h1{
+            margin: 0px auto 20px auto;
+        }
+        .arrow:hover{
+            background: transparent;
+        }
+        
         .screens{
             width: 300px;
         }
         .desc{
             margin-top: 30px;
+            // max-height: 30vh;
+            max-height: initial;
+        }
+        .arrow-wrapper{
+            position: fixed;
+            bottom: 40px;
         }
         .arrow{
             top: auto;
-            bottom: -35px;
-            width: 57px;
+            // bottom: -50px;
+            bottom: 0;
+
+            width: 0;
             height: 69px;
             z-index: 1000;
         }
@@ -329,9 +365,8 @@ export default{
             left: 48px;
         }
         .arrow-right2 {
-            right: 160px;
+            right: 35px;
         }
-        
 
         .teachers {
             margin-top: 80px;
