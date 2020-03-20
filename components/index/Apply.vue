@@ -37,7 +37,7 @@
                                 <ol>
                                     <li>Зарегистрируйтесь <a target="_blank" href="http://abit.ifmo.ru/ums/system/login/">в личном кабинете</a> и выберите
                                         удобную
-                                        дату сдачи экзамена: 8 и 9 июля, 5 и 6 августа
+                                        дату сдачи экзамена: 8 и 9 июля, 3 и 4 августа
                                     </li>
                                     <li>Подготовьтесь к экзамену по <a target="_blank" href="https://abit.ifmo.ru/file/eduprog/voprosy_11714.pdf">списку
                                         экзаменационных вопросов</a></li>
