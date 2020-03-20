@@ -16,7 +16,7 @@
 </template>
 <script>
 export default{
-    props: ['game'],
+    props: ['game', 'mobile'],
     data(){
         return {
             full: null,
@@ -26,6 +26,7 @@ export default{
             video: true,
             swiperOption: {
                 slidesPerView: 5,
+                slidesPerView: this.mobile ? 3 : 4,
             }
         }
     },

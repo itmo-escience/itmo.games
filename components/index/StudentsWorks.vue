@@ -19,7 +19,7 @@
                 </article>
             </div>
         </div>
-        <Overlay v-if="overlay" :name="game" @back="closeGame"/>
+        <Overlay v-if="overlay" :name="game" :mobile="this.mobile" @back="closeGame"/>
     </div>
 </template>
 

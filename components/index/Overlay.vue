@@ -9,7 +9,7 @@
                             <h1 class="name">{{g.name}}</h1>
                             <div class="flex about">
                                 <div class="screens">
-                                    <Scroller :game="g"/>
+                                    <Scroller :game="g" :mobile="mobile"/>
                                 </div>
                                 <div class="desc">
                                     <div class="desc-head">{{g.project}}</div>
@@ -41,7 +41,7 @@
 <script>
 import Scroller from '~/components/index/Scroller.vue'
 export default{
-    props: ['name'],
+    props: ['name', 'mobile'],
     components: { Scroller },
     data(){
         return{
@@ -50,8 +50,7 @@ export default{
                     nextEl: '.arrow-right2',
                     prevEl: '.arrow-left2',
                 },
-                //spaceBetween: 580,
-                allowTouchMove: false
+                allowTouchMove: false,
             },
             game: null,
             games: {
@@ -252,6 +251,7 @@ export default{
         padding: 70px 100px;
         background: rgba(14, 10, 32, 0.40);
         backdrop-filter: blur(40px);
+        margin: auto;
     }
 
     .games-slider{
@@ -356,7 +356,6 @@ export default{
         }
         .arrow{
             top: auto;
-            // bottom: -50px;
             bottom: 0;
 
             width: 0;
@@ -367,7 +366,7 @@ export default{
             left: 48px;
         }
         .arrow-right2 {
-            right: 35px;
+            right: -72px;
         }
 
         .teachers {
