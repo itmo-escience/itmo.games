@@ -122,4 +122,9 @@ import Overlay from '~/components/index/Overlay.vue'
     .slider-img{
         max-width: inherit;
     }
+    @media (max-width: 512px) {
+        .msg{
+            margin: 50px 25px 0px 25px;
+        }
+    }
 </style>
