@@ -1,7 +1,10 @@
 <template>
     <div class="hero">
-        <video autoplay muted loop class="bg" src="/bg.mp4"></video>
-        <img src="/bg_gradient.png" class="bg"/>
+        <div class="videoContainer">
+            <video autoplay muted loop class="bg" src="/bg.mp4"></video>
+            <div class="gradient"></div>
+        </div>
+        
         <div class="container mx-auto px-4">
             <div class="hero-lead">
                 <!--<h1>Магистерская программа</h1>-->
@@ -65,23 +68,44 @@
     </div>
 </template>
 <style scoped lang="scss">
-    .bg{
+    .videoContainer{
         position: absolute;
-        right: 0;
-        top: 0;
-        min-width: 100%; 
-        min-height: 100%;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
     }
     video.bg{
+        min-width: 100%;
+        min-height: 100%;
+        position: relative;
         z-index: -2;
     }
-    img.bg{
+    .gradient{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
         z-index: -1;
+        background: url('/bg_gradient.png');
     }
+    // .bg{
+    //     position: absolute;
+    //     right: 0;
+    //     top: 0;
+    //     min-width: 100%; 
+    //     min-height: 100%;
+    // }
+    // video.bg{
+    //     z-index: -2;
+    // }
+    // img.bg{
+    //     z-index: -1;
+    // }
     .desc{
-        position:absolute;
-        left: 124px;
-        bottom: 227px;
+        position: relative;
+        left: 125px;
+        bottom: 47px;
 
         font-size: 20px;
 
@@ -217,6 +241,8 @@
     }
 
     @media (max-width: 512px) {
+        .desc{ left: 30px; }
+
         .hero {
             background-position: -300px top;
             background-size: auto;
