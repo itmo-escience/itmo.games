@@ -210,7 +210,7 @@
     @media (max-width: 512px) {
         .block{
             width: auto;
-            padding: 0 0;
+            padding: 0 2px;
         }
     }
 
