@@ -1,31 +1,38 @@
 @font-face {
     font-family: 'MullerLight';
     src: url('~assets/fonts/MullerLight.otf');
+    font-display: swap;
 }
 @font-face {
     font-family: 'MullerRegular';
     src: url('~assets/fonts/MullerRegular.otf');
+    font-display: swap;
 }
 @font-face {
     font-family: 'MullerMedium';
     src: url('~assets/fonts/MullerMedium.otf');
+    font-display: swap;
 }
 @font-face {
     font-family: 'MullerBold';
     src: url('~assets/fonts/MullerBold.otf');
+    font-display: swap;
 }
 @font-face {
     font-family: 'MullerExtraBold';
     src: url('~assets/fonts/MullerExtraBold.otf');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'OpenSansRegular';
     src: url('~assets/fonts/OpenSansRegular.ttf');
+    font-display: swap;
 }
 @font-face {
     font-family: 'OpenSansBold';
     src: url('~assets/fonts/OpenSansBold.ttf');
+    font-display: swap;
 }
 
 /**
