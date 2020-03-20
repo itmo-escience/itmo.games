@@ -81,6 +81,7 @@
 
 <script>
     export default {
+        props: ['mobile'],
         data() {
             return {
                 swiperOptions: {
@@ -88,7 +89,7 @@
                         nextEl: '.arrow-right',
                         prevEl: '.arrow-left',
                     },
-                    slidesPerView: 3,
+                    slidesPerView: this.mobile ? 1 : 3,
                     loop: true,
                     autoplay: {
                         delay: 2000,
@@ -205,6 +206,12 @@
 
         font-family: MullerBold, sans-serif;
         font-size: 20px;
+    }
+    @media (max-width: 512px) {
+        .block{
+            width: auto;
+            padding: 0 0;
+        }
     }
 
 </style>

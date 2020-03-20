@@ -9,10 +9,11 @@
         <Apply></Apply>
         <Teachers></Teachers>
         <Graduates />
-        <no-ssr>
+        <!--<no-ssr>
             <PartnersMobile v-if="isMobile()"></PartnersMobile>
             <PartnersScroll v-else></PartnersScroll>
-        </no-ssr>
+        </no-ssr>-->
+        <PartnersScroll :mobile="isMobile()"/>
         <Contacts></Contacts>
     </main>
 </template>
@@ -35,11 +36,7 @@
             Apply, Teachers,
             Graduates,
             PartnersScroll, PartnersMobile,
-            Contacts},
-        data() {
-            return {
-                // isMobile: true
-            }
+            Contacts
         },
         methods: {
             isMobile: function () {
@@ -47,13 +44,10 @@
                 let width = window.innerWidth
                     || document.documentElement.clientWidth
                     || document.body.clientWidth;
-                if (width <= 512) {
-                    return true;
-                } else {
-                    return false;
-                }
+                
+                return width <= 512;
             }
-        },
+        }
     }
 </script>
 
