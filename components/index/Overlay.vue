@@ -15,7 +15,9 @@
                                     <div class="desc-head">{{g.project}}</div>
                                     <div class="desc-body">{{ g.semestr }}</div>
                                     <div class="desc-head">Авторы</div>
-                                    <div class="desc-body">{{ g.authors.join() }}</div>
+                                    <div class="desc-body">
+                                        <div v-for="a in g.authors" :key="a">{{ a }}</div>
+                                    </div>
                                     <div class="desc-head">Описание</div>
                                     <div class="desc-body">{{ g.description_ru }}</div>
                                     <a v-if="g.addition" class="addition" :href="g.addition" target="_blank">Подробнее об игре</a>
