@@ -198,7 +198,7 @@
     .wrapper {
         position: relative;
         background-image: url("/apply-bg.png");
-        background-size: 100%;
+        background-size: cover;
         background-repeat: no-repeat;
         //  background-position-y: -90px;
     }
@@ -213,11 +213,11 @@
     }
 
     .apply {
-        padding-top: 140px;
         padding-right: 80px;
         width: 60%;
         margin-left: auto;
         margin-bottom: 120px;
+        padding-top: 130px;
 
         h1 {
             color: #EC0B43;
@@ -414,6 +414,7 @@
             width: auto;
             padding: 0 12px;
             padding-bottom: 32px;
+            padding-top: 130px;
         }
         .apply__variant {
             div {
