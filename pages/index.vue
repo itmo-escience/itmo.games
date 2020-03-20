@@ -5,7 +5,7 @@
         </div>
         <Hero></Hero>
         <Plan></Plan>
-        <StudentsWorks />
+        <StudentsWorks :mobile="isMobile()"/>
         <Apply></Apply>
         <Teachers></Teachers>
         <Graduates />

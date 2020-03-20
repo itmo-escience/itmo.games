@@ -26,14 +26,15 @@
 <script>
 import Overlay from '~/components/index/Overlay.vue'
   export default {
+    props: ['mobile'],
     components: { Overlay },
     data() {
       return {
         overlay: false,
         game: '',
         swiperOption: {
-          slidesPerView: 4,
-          spaceBetween: 30,
+          slidesPerView: this.mobile ? 1 : 4,
+        //   spaceBetween: 30,
           scrollbar: {
             el: '.swiper-scrollbar',
             hide: false,
@@ -47,7 +48,7 @@ import Overlay from '~/components/index/Overlay.vue'
             },
             {
                 name: 'Alchemica',
-                img: '/labs/prew_main_page/Alchemica.gif'
+                img: '/labs/prew_main_page/Alchemica.png'
             },
             {
                 name: 'Greedy Gramps',
@@ -125,6 +126,9 @@ import Overlay from '~/components/index/Overlay.vue'
     @media (max-width: 512px) {
         .msg{
             margin: 50px 25px 0px 25px;
+        }
+        .lab{
+            text-align: center;
         }
     }
 </style>
