@@ -285,6 +285,9 @@
             button {
                 margin: 0;
                 font-size: 16px;
+                height: auto;
+                line-height: 30px;
+                
 
                 &:first-child {
                     padding: 0 6px;
