@@ -162,11 +162,9 @@
     .partner{
         left: 0;
         bottom: 35px;
-        position: absolute;
         font-family: OpenSansRegular, sans-serif;
         color: rgba(255, 255, 255, .5);
         margin-top: 60px;
-        margin-bottom: 10px;
 
         div{
             margin-bottom: 15px;
@@ -176,7 +174,6 @@
     .plan-details__info {
         width: 33.3333%;
         margin-right: 40px;
-        margin-bottom: 20px;
 
         p {
                 margin-bottom: 15px;
@@ -272,6 +269,10 @@
     }
 
     @media (max-width: 512px) {
+        .partner{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
         .specializations {
             width: auto;
         }
