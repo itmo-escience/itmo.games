@@ -40,9 +40,13 @@ export default{
         height: 100%;
         position: absolute;
     }
-
+    
+    @media (max-width: 1024px) {
+        .gradues{ width: 1024px; }
+    }
     @media (max-width: 512px) {
         .gradues{ width: 320px; }
         .video{ padding-bottom: 39%; }
     }
+    
 </style>
