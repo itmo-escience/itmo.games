@@ -2,14 +2,14 @@
     <div>
         <div class="view">
             <youtube v-if="video && game.video" :player-width="width" :player-height="height" :video-id="game.video"/>
-            <img v-else class="full" :src="full"/>
+            <img v-else class="full" :src="require(`~/assets${full}?webp`)"/>
         </div>
         <swiper class="swiper" :options="swiperOption">
             <swiper-slide v-if="game.video">
-                <img @click="openVideo" class="small" :src="videoUrl" :class="{focus: focus === 'video'}"/>
+                <img @click="openVideo" class="small" :src="require(`~/assets${videoUrl}?webp`)" :class="{focus: focus === 'video'}"/>
             </swiper-slide>
             <swiper-slide v-for="s in game.screens" :key="s">
-                <img :src="s" class="small" @click="fullScreen(s)" :class="{focus: focus === s}"/>
+                <img :src="require(`~/assets${s}?webp`)" class="small" @click="fullScreen(s)" :class="{focus: focus === s}"/>
             </swiper-slide>
         </swiper>
     </div>
