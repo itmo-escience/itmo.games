@@ -241,7 +241,7 @@
         .arrow-wrapper {
             display: flex;
             justify-content: space-between;
-            padding: 0 128px;
+            padding: 0 85px;
         }
 
         .arrow {
