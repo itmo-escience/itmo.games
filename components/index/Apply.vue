@@ -402,6 +402,12 @@
         font-size: 50px;
     }
 
+    @media (max-width: 1024px) {
+        .numbers{
+            width: 1024px;
+            left: 0;
+        }
+    }
     @media (max-width: 512px) {
         .wrapper {
             margin-bottom: 770px;
