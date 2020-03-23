@@ -13,62 +13,62 @@
                             </swiper-slide>-->
                             <swiper-slide>
                                 <div class="block">
-                                    <img src="partners/AcademicParnter.png">
+                                    <img :src="require('~/assets/partners/AcademicParnter.png?webp')">
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
                                 <div class="block">
-                                    <img src="partners/wargaming.png">
+                                    <img :src="require('~/assets/partners/wargaming.png?webp')">
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
                                 <div class="block">
-                                    <img src="partners/nival.png">
+                                    <img :src="require('~/assets/partners/nival.png?webp')">
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
                                 <div class="block">
-                                    <img src="partners/bytex.png">
+                                    <img :src="require('~/assets/partners/bytex.png?webp')">
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
                                 <div class="block">
-                                    <img src="partners/trace.png">
+                                    <img :src="require('~/assets/partners/trace.png?webp')">
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
                                 <div class="block">
-                                    <img src="partners/banana.png">
+                                    <img :src="require('~/assets/partners/banana.png?webp')">
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
                                 <div class="block">
-                                    <img src="partners/indikator_full.png">
+                                    <img :src="require('~/assets/partners/indikator_full.png?webp')">
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
                                 <div class="block">
-                                    <img src="partners/tau_tracker.png">
+                                    <img :src="require('~/assets/partners/tau_tracker.png?webp')">
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
                                 <div class="block">
-                                    <img src="partners/cerevrum.png">
+                                    <img :src="require('~/assets/partners/cerevrum.png?webp')">
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
                                 <div class="block">
-                                    <img src="partners/antilatency.png">
+                                    <img :src="require('~/assets/partners/antilatency.png?webp')">
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
                                 <div class="block">
-                                    <img src="partners/modum_lab.png">
+                                    <img :src="require('~/assets/partners/modum_lab.png?webp')">
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
                                 <div class="block">
-                                    <img src="partners/logo_sperasoft.png">
+                                    <img :src="require('~/assets/partners/logo_sperasoft.png?webp')">
                                 </div>
                             </swiper-slide>
                         </swiper>
