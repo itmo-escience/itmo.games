@@ -10,14 +10,17 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@bazzite/nuxt-optimized-images": "^0.3.0",
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/pwa": "^2.6.0",
     "cross-env": "^5.2.0",
+    "imagemin-optipng": "^7.1.0",
     "nuxt": "^2.11.0",
     "three": "^0.104.0",
     "vue-awesome-swiper": "^3.1.3",
     "vue-dragscroll": "^1.8.3",
-    "vue-youtube-embed": "^2.2.2"
+    "vue-youtube-embed": "^2.2.2",
+    "webp-loader": "^0.6.0"
   },
   "devDependencies": {
     "autoprefixer": "^8.6.4",

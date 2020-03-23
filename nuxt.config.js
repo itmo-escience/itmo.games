@@ -3,9 +3,6 @@ import pkg from './package'
 export default {
     mode: 'universal',
 
-    /*
-    ** Headers of the page
-    */
     head: {
         title: 'Магистратура Технологии разработки компьютерных игр - Университет ИТМО',
         meta: [
@@ -24,14 +21,8 @@ export default {
         ],
     },
 
-    /*
-    ** Customize the progress-bar color
-    */
     loading: {color: '#fff'},
 
-    /*
-    ** Global CSS
-    */
     css: [
         '~/assets/css/tailwind.css',
         '~/assets/css/main.css'
@@ -52,6 +43,7 @@ export default {
     */
     modules: [
         // Doc: https://axios.nuxtjs.org/usage
+        '@bazzite/nuxt-optimized-images',
         '@nuxtjs/axios',
         '@nuxtjs/pwa',
     ],
