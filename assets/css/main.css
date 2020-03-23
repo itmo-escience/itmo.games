@@ -14,16 +14,3 @@ body{
     -webkit-transform: rotate(180deg) !important;
     transform: rotate(180deg) !important;
 }
-/*.labs-slider > div> div>.swiper-slide {
-    width: auto !important;
-}
- .partners-slider>div>div>.swiper-slide-active>.block,
-.partners-slider>div>div>.swiper-slide-next>.block{
-    border-right: 1px solid #5c5a66;
-} */
-
-@media (max-width: 512px) {
-    /* .swiper>div>.swiper-slide {
-        width: 100px !important;
-    } */
-}
