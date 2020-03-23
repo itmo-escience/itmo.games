@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+    <div class="wrapper" :style="{ backgroundImage: 'url(' + require('~/assets/bg/apply-bg.png?webp') + ')' }">
         <div class="container mx-auto px-4 flex" @click="closeAll()">
             <article class="apply">
                 <div class="padded">
@@ -197,7 +197,7 @@
 <style scoped lang="scss">
     .wrapper {
         position: relative;
-        background-image: url("/apply-bg.png");
+        //background-image: url("/apply-bg.png");
         background-size: cover;
         background-repeat: no-repeat;
         //  background-position-y: -90px;
