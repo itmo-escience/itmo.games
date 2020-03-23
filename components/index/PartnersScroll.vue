@@ -135,7 +135,7 @@
         width: 290px;
         height: 180px;
 
-        padding: 0 50px;
+        // padding: 0 50px;
 
         // border-left: 1px solid #5c5a66;
 
