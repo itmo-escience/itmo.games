@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper" id="contacts">
+    <div class="wrapper" id="contacts" :style="{ backgroundImage: 'url(' + require('~/assets/bg/contacts_gradient.png?webp') + '), url(' + require('~/assets/bg/map.jpg?webp') + ')'}">
         <div class="container mx-auto px-4 flex">
             <article class="contacts">
                 <div class="info">
@@ -165,7 +165,7 @@
 <style scoped lang="scss">
     .wrapper {
         position: relative;
-        background-image: url("/contacts_gradient.png"), url("/map.jpg");
+        // background-image: url("/contacts_gradient.png"), url("/map.jpg");
         background-size: cover, cover;
         background-repeat: no-repeat, no-repeat;
     }
