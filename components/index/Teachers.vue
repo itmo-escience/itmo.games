@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+    <div class="wrapper"  :style="{ backgroundImage: 'url(' + require('~/assets/bg/teachers-bg.png?webp') + ')' }">
         <div class="container mx-auto px-4 flex">
             <article class="teachers">
                 <h1>Преподаватели</h1>
@@ -10,7 +10,7 @@
                             <swiper-slide>
                                 <div class="teacher">
                                     <div class="photo">
-                                        <img src="~assets/photos/karsakov.png" alt="">
+                                        <img :src="require('~/assets/photos/karsakov.png?webp')" alt="">
                                     </div>
                                     <div class="info">
                                         <div class="name">Андрей Карсаков</div>
@@ -21,7 +21,7 @@
                             <swiper-slide>
                                 <div class="teacher">
                                     <div class="photo">
-                                        <img src="~assets/photos/zagarskih.png" alt="">
+                                        <img :src="require('~/assets/photos/zagarskih.png?webp')" alt="">
                                     </div>
                                     <div class="info">
                                         <div class="name">Александр Загарских</div>
@@ -32,7 +32,7 @@
                             <swiper-slide>
                                 <div class="teacher">
                                     <div class="photo">
-                                        <img src="~assets/photos/horoshavin.png" alt="">
+                                        <img :src="require('~/assets/photos/horoshavin.png?webp')" alt="">
                                     </div>
                                     <div class="info">
                                         <div class="name">Александр Хорошавин</div>
@@ -43,7 +43,7 @@
                             <swiper-slide>
                                 <div class="teacher">
                                     <div class="photo">
-                                        <img src="~assets/photos/gimel.png" alt="">
+                                        <img :src="require('~/assets/photos/gimel.png?webp')" alt="">
                                     </div>
                                     <div class="info">
                                         <div class="name">Сергей Гимельрейх</div>
@@ -54,7 +54,7 @@
                             <swiper-slide>
                                 <div class="teacher">
                                     <div class="photo">
-                                        <img src="~assets/photos/aleksandrov.png" alt="">
+                                        <img :src="require('~/assets/photos/aleksandrov.png?webp')" alt="">
                                     </div>
                                     <div class="info">
                                         <div class="name">Эдуард Александров</div>
@@ -65,7 +65,7 @@
                             <swiper-slide>
                                 <div class="teacher">
                                     <div class="photo">
-                                        <img src="~assets/photos/myasishev.png" alt="">
+                                        <img :src="require('~/assets/photos/myasishev.png?webp')" alt="">
                                     </div>
                                     <div class="info">
                                         <div class="name">Александр Мясищев</div>
@@ -76,7 +76,7 @@
                             <swiper-slide>
                                 <div class="teacher">
                                     <div class="photo">
-                                        <img src="~assets/photos/ivanov.png" alt="">
+                                        <img :src="require('~/assets/photos/ivanov.png?webp')" alt="">
                                     </div>
                                     <div class="info">
                                         <div class="name">Сергей Иванов</div>
@@ -114,7 +114,7 @@
 
 <style scoped lang="scss">
     .wrapper {
-        background-image: url("/teachers-bg.png");
+        // background-image: url("/teachers-bg.png");
         background-repeat: no-repeat;
         background-position-y: -300px;
     }
