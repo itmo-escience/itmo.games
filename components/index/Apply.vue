@@ -18,7 +18,7 @@
                         <div>
                             <div class="exam-name">
                                 <div>
-                                    <span class="exam-dates">8 и 9 июля, 3 и 4 августа</span>
+                                    <span class="exam-dates">8 и 9 июля, 27, 28 июля, 3 и 4 августа, 14 августа</span>
                                     <span>Вступительный экзамен <br></span>
                                 </div>
                                 <img src="/icons/icon_exam.png" alt="">
