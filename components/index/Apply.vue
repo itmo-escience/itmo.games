@@ -17,8 +17,8 @@
                     <div class="apply__variant" @click.stop>
                         <div>
                             <div class="exam-name">
-                                <div>
-                                    <span class="exam-dates">8 и 9 июля, 27, 28 июля, 3 и 4 августа, 14 августа</span>
+                                <div> 
+                                    <span class="exam-dates">27, 28 июля, 3,4,10,11 августа</span>
                                     <span>Вступительный экзамен <br></span>
                                 </div>
                                 <img src="/icons/icon_exam.png" alt="">
