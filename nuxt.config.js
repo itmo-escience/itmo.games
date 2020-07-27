@@ -64,6 +64,16 @@ export default {
         extend(config, ctx) {
         }
     },
+    render: {
+        static: {
+            setHeaders(res) {
+                res.setHeader('X-Frame-Options', 'ALLOWALL')
+                res.setHeader('Access-Control-Allow-Origin', '*')
+                res.setHeader('Access-Control-Allow-Methods', 'GET')
+                res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
+            }
+        }
+    },
     generate: {
         fallback: "404.html"
     }
