@@ -1,0 +1,16 @@
+body{
+    overflow-x: hidden;
+}
+.swiper-scrollbar-drag{
+    background: #ACACAC !important;
+}
+.arrow-left2.swiper-button-disabled > .arrow-left2-img{
+    background-image: url("/arrow-hover.png") !important;
+    -webkit-transform: rotate(0deg) !important;
+    transform: rotate(0deg) !important;
+}
+.arrow-right2.swiper-button-disabled > .arrow-right2-img{
+    background-image: url("/arrow-hover.png") !important;
+    -webkit-transform: rotate(180deg) !important;
+    transform: rotate(180deg) !important;
+}

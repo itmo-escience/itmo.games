@@ -32,8 +32,9 @@ export default {
     ** Plugins to load before mounting the App
     */
     plugins: [
-        '~plugins/dragscroll',
+        // '~plugins/dragscroll',
         '~plugins/swiper',
+        { src: '@/plugins/dragscroll.js', ssr: false },
         { src: '@/plugins/youtube.js', ssr: false },
         {src: '~plugins/analytics.js', ssr: false}
     ],

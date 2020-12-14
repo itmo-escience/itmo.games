@@ -1,5 +1,7 @@
 <template>
-    <div class="wrapper" :style="{ backgroundImage: 'url(' + require('~/assets/bg/apply-bg.png?webp') + ')' }">
+    <!-- <div class="wrapper" :style="{ backgroundImage: 'url(' + require('~/assets/bg/apply-bg.png?webp') + ')' }"> -->
+    <div class="wrapper">
+        <img src="/bg/apply-bg.png" style="position: absolute; z-index: -1;"/>
         <div class="container mx-auto px-4 flex" @click="closeAll()">
             <article class="apply">
                 <div class="padded">

@@ -10,7 +10,7 @@
                             <swiper-slide>
                                 <div class="teacher">
                                     <div class="photo">
-                                        <img :src="require('~/assets/photos/karsakov.png?webp')" alt="">
+                                        <img src="/photos/karsakov.png">
                                     </div>
                                     <div class="info">
                                         <div class="name">Андрей Карсаков</div>
@@ -21,7 +21,7 @@
                             <swiper-slide>
                                 <div class="teacher">
                                     <div class="photo">
-                                        <img :src="require('~/assets/photos/zagarskih.png?webp')" alt="">
+                                        <img src="/photos/zagarskih.png">
                                     </div>
                                     <div class="info">
                                         <div class="name">Александр Загарских</div>
@@ -32,7 +32,7 @@
                             <swiper-slide>
                                 <div class="teacher">
                                     <div class="photo">
-                                        <img :src="require('~/assets/photos/horoshavin.png?webp')" alt="">
+                                        <img src="/photos/horoshavin.png">
                                     </div>
                                     <div class="info">
                                         <div class="name">Александр Хорошавин</div>
@@ -43,7 +43,7 @@
                             <swiper-slide>
                                 <div class="teacher">
                                     <div class="photo">
-                                        <img :src="require('~/assets/photos/gimel.png?webp')" alt="">
+                                        <img src="/photos/gimel.png">
                                     </div>
                                     <div class="info">
                                         <div class="name">Сергей Гимельрейх</div>
@@ -54,7 +54,7 @@
                             <swiper-slide>
                                 <div class="teacher">
                                     <div class="photo">
-                                        <img :src="require('~/assets/photos/aleksandrov.png?webp')" alt="">
+                                        <img src="/photos/aleksandrov.png">
                                     </div>
                                     <div class="info">
                                         <div class="name">Эдуард Александров</div>
@@ -65,7 +65,7 @@
                             <swiper-slide>
                                 <div class="teacher">
                                     <div class="photo">
-                                        <img :src="require('~/assets/photos/myasishev.png?webp')" alt="">
+                                        <img src="/photos/myasishev.png">
                                     </div>
                                     <div class="info">
                                         <div class="name">Александр Мясищев</div>
@@ -76,7 +76,7 @@
                             <swiper-slide>
                                 <div class="teacher">
                                     <div class="photo">
-                                        <img :src="require('~/assets/photos/ivanov.png?webp')" alt="">
+                                        <img src="/photos/ivanov.png">
                                     </div>
                                     <div class="info">
                                         <div class="name">Сергей Иванов</div>

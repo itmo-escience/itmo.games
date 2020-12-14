@@ -9,7 +9,7 @@
                     <swiper class="swiper" :options="swiperOption">
                         <swiper-slide  v-for="g in games" :key="g.name">
                             <div class="lab" @click="openGame(g.name)">
-                                <img class="slider-img" :src="require(`~/assets${g.img}?webp`)"/>
+                                <img class="slider-img" :src="`${g.img}`"/>
                                 <div class="lab-title">{{g.name}}</div>
                             </div>
                         </swiper-slide>

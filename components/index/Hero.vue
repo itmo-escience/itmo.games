@@ -2,7 +2,10 @@
     <div class="hero">
         <div class="videoContainer">
             <video autoplay muted loop class="bg" src="/bg.mp4"></video>
-            <div class="gradient" :style="{ background: 'url(' + require('~/assets/bg/bg_gradient.png?webp') + ')' }"></div>
+            <!-- <div class="gradient" :style="{ background: 'url(' + require('~/assets/bg/bg_gradient.png?webp') + ')' }"></div> -->
+            <div class="gradient">
+                <img class="itmo-logo" src="/bg/bg_gradient.png" alt="" style="width: 100%; height: 100%">
+            </div>
         </div>
         
         <div class="container mx-auto px-4">
@@ -87,7 +90,7 @@
         top: 0px;
         left: 0px;
         z-index: -1;
-        // background: url('/bg_gradient.png');
+        // background: url("bg/bg_gradient.png") cover;
     }
     // .bg{
     //     position: absolute;

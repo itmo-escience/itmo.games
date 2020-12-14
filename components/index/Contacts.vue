@@ -1,5 +1,8 @@
 <template>
-    <div class="wrapper" id="contacts" :style="{ backgroundImage: 'url(' + require('~/assets/bg/contacts_gradient.png?webp') + '), url(' + require('~/assets/bg/map.jpg?webp') + ')'}">
+    <!-- <div class="wrapper" id="contacts" :style="{ backgroundImage: 'url(' + require('~/assets/bg/contacts_gradient.png?webp') + '), url(' + require('~/assets/bg/map.jpg?webp') + ')'}"> -->
+    <div class="wrapper" id="contacts">
+        <img src="/bg/contacts_gradient.png" style="position: absolute; z-index:-1; height: 100%; width: 100%;"/>
+        <img src="/bg/map.jpg" style="position: absolute; z-index:-2; height: 100%; width: 100%;"/>
         <div class="container mx-auto px-4 flex">
             <article class="contacts">
                 <div class="info">

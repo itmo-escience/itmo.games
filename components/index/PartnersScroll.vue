@@ -13,62 +13,62 @@
                             </swiper-slide>-->
                             <swiper-slide>
                                 <div class="block">
-                                    <img :src="require('~/assets/partners/AcademicParnter.png?webp')">
+                                    <img src="/partners/AcademicParnter.png">
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
                                 <div class="block">
-                                    <img :src="require('~/assets/partners/wargaming.png?webp')">
+                                    <img src="/partners/wargaming.png">
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
                                 <div class="block">
-                                    <img :src="require('~/assets/partners/nival.png?webp')">
+                                    <img src="/partners/nival.png">
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
                                 <div class="block">
-                                    <img :src="require('~/assets/partners/bytex.png?webp')">
+                                    <img src="/partners/bytex.png">
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
                                 <div class="block">
-                                    <img :src="require('~/assets/partners/trace.png?webp')">
+                                    <img src="/partners/trace.png">
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
                                 <div class="block">
-                                    <img :src="require('~/assets/partners/banana.png?webp')">
+                                    <img src="/partners/banana.png">
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
                                 <div class="block">
-                                    <img :src="require('~/assets/partners/indikator_full.png?webp')">
+                                    <img src="/partners/indikator_full.png">
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
                                 <div class="block">
-                                    <img :src="require('~/assets/partners/tau_tracker.png?webp')">
+                                    <img src="/partners/tau_tracker.png">
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
                                 <div class="block">
-                                    <img :src="require('~/assets/partners/cerevrum.png?webp')">
+                                    <img src="/partners/cerevrum.png">
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
                                 <div class="block">
-                                    <img :src="require('~/assets/partners/antilatency.png?webp')">
+                                    <img src="/partners/antilatency.png">
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
                                 <div class="block">
-                                    <img :src="require('~/assets/partners/modum_lab.png?webp')">
+                                    <img src="/partners/modum_lab.png">
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
                                 <div class="block">
-                                    <img :src="require('~/assets/partners/logo_sperasoft.png?webp')">
+                                    <img src="/partners/logo_sperasoft.png">
                                 </div>
                             </swiper-slide>
                         </swiper>
